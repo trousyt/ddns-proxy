@@ -1,0 +1,16 @@
+{
+  "name": "ddns-proxy",
+  "version": "0.0.1",
+  "dependencies": {
+    "http-auth": "^2.2.5",
+    "log4js": "^0.6.22",
+    "node-http-proxy": "^0.1.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "mocha": "^2.1.0"
+  },
+  "scripts": {
+    "test": "make test"
+  }
+}
