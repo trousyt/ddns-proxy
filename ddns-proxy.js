@@ -3,7 +3,7 @@
 var fs = require('fs');
 var httpAuth = require('http-auth');
 var httpProxy = require('node-http-proxy');
-var ddnsConfig = require('./config');
+var ddnsConfig = require('./lib/config');
 
 var startProxyServer = function(cfg) {
 	
@@ -24,7 +24,7 @@ var startProxyServer = function(cfg) {
 
 	// Start the server..
 	var proxy = httpProxy.createProxyServer(proxyOptions);
-	proxy.listen(8800);
+	proxy.listen(cfg.http.port);
 
 	var options = {
 		key: fs.readFileSync(cfg.http.ssl.pkey_path),
