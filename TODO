@@ -1,0 +1,10 @@
+TODO
+
+- Initially support only IETF method for updating DDNS
+	- Later, possibly also support HTTP method
+- Modify both A and PTR (reverse) records on update
+- Since we can't support DHCID from the IETF-spec, we can store the DHCID locally
+	- There are obvious issues with this, the first being that it doesn't work
+	  when multiple DDNS services are updating the same record; this doesn't matter for us
+	- We can also do something outside of the standard, and simply specify in config that only 
+	  clients with certain DHCP-id are able to update the record

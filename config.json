@@ -1,0 +1,14 @@
+{
+	"http": {
+		"port": 8800,
+		"auth": {
+			"realm": "ddns-proxy",
+			"file": "auth.htpasswd"
+		},
+		"ssl": {
+			"use_ssl": false,
+			"cert_path": "cert.pem",
+			"pkey_path": "pkey.pem"		
+		}
+	}
+}

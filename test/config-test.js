@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 var assert = require('assert');
-var config = require('../lib/config');
+var config = require('../lib/ddns-proxy/config');
 
 describe('Config', function() {
 
@@ -31,9 +31,9 @@ describe('Config', function() {
 			assert(result);
 		});	
 
-		it('should return an absolute path', function() {
+		it('should not return a relative path', function() {
 			var result = ddnsConfig.fixupPath(testPath);
-			assert(result.indexOf('.') > 0, 'path is not absolute');
+			assert(result.indexOf('.') > 0, 'path is relative');
 		});
 
 	});
