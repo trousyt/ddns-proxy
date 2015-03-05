@@ -1,5 +1,5 @@
 # ddns-proxy
-A HTTP proxy that forwards [![IETF DDNS UPDATE](http://tools.ietf.org/html/rfc2136)] requests.
+A HTTP proxy that proxies [IETF RFC-2136](http://tools.ietf.org/html/rfc2136) requests.
 
 [![Build Status](https://travis-ci.org/trousyt/ddns-proxy.svg)](https://travis-ci.org/trousyt/ddns-proxy)
 
