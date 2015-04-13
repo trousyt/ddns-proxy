@@ -12,12 +12,12 @@ In my case, I'm proxying IETF DDNS updates to the DigitalOcean DNS HTTP API. Thi
 
 - - -
 
-Essentially, `ddns-proxy` simply uses a `node socket` instance to support the IETF-defined update and a state machine to keep track of connection command sequence. Since authentication isn't available in IETF Most configuration options have defaults, so they aren't required unless necessary.
-
-To run tests, run `grunt test`, which uses the Mocha test runner.
+Essentially, `ddns-proxy` simply uses a `node socket` instance to support the IETF-defined update and a state machine to keep track of connection command sequence. Most configuration options have defaults, so they aren't required unless specific to your setup.
 
 Getting Started
 ---------------
+To run tests, run `grunt test`, which uses the Mocha test runner.
+
 Before running the app for the first time, you'll want to declare your HTTP settings (optional), routes, and targets in a `ddns-proxy.json` configuration file. See `sample-config.json` for an example.
 
 To start the app, simply run `node ddns-proxy`

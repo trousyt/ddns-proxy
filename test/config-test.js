@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 var assert = require('assert');
-var config = require('../lib/ddns-proxy/config');
+var config = require('../lib/core/config');
 
 describe('Config', function() {
 
